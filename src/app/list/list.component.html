@@ -1,0 +1,14 @@
+<h1>AWW</h1>
+
+<body>
+<!-- <app-list-item *ngFor=redditAPI: RedditApiService></app-list-item> -->
+<div class="list" *ngFor="let post of redditAPI.posts">
+    
+    {{post.title}} 
+<img [src]="post.image">
+
+<a class="link" [href]="post.link">Click Me</a>
+</div>
+
+<!-- If I have time - look at animal crossing example to pass the data down to the child -->
+</body>
